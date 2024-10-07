@@ -38,7 +38,7 @@
             btnNum6 = new Button();
             btnNum7 = new Button();
             btnNum8 = new Button();
-            button9 = new Button();
+            btnNum9 = new Button();
             btnComma = new Button();
             btnNum0 = new Button();
             btnRemoveLast = new Button();
@@ -69,7 +69,7 @@
             flowLayoutPanel1.Controls.Add(btnNum6);
             flowLayoutPanel1.Controls.Add(btnNum7);
             flowLayoutPanel1.Controls.Add(btnNum8);
-            flowLayoutPanel1.Controls.Add(button9);
+            flowLayoutPanel1.Controls.Add(btnNum9);
             flowLayoutPanel1.Controls.Add(btnComma);
             flowLayoutPanel1.Controls.Add(btnNum0);
             flowLayoutPanel1.Controls.Add(btnRemoveLast);
@@ -87,6 +87,7 @@
             btnNum1.Name = "btnNum1";
             btnNum1.Size = new Size(64, 63);
             btnNum1.TabIndex = 0;
+            btnNum1.TabStop = false;
             btnNum1.Text = "1";
             btnNum1.UseVisualStyleBackColor = true;
             btnNum1.Click += btnNum1_Click;
@@ -99,6 +100,7 @@
             btnNum2.Name = "btnNum2";
             btnNum2.Size = new Size(64, 63);
             btnNum2.TabIndex = 1;
+            btnNum2.TabStop = false;
             btnNum2.Text = "2";
             btnNum2.UseVisualStyleBackColor = true;
             btnNum2.Click += btnNum2_Click;
@@ -111,6 +113,7 @@
             btnNum3.Name = "btnNum3";
             btnNum3.Size = new Size(64, 63);
             btnNum3.TabIndex = 2;
+            btnNum3.TabStop = false;
             btnNum3.Text = "3";
             btnNum3.UseVisualStyleBackColor = true;
             btnNum3.Click += btnNum3_Click;
@@ -123,6 +126,7 @@
             btnNum4.Name = "btnNum4";
             btnNum4.Size = new Size(64, 63);
             btnNum4.TabIndex = 3;
+            btnNum4.TabStop = false;
             btnNum4.Text = "4";
             btnNum4.UseVisualStyleBackColor = true;
             btnNum4.Click += btnNum4_Click;
@@ -135,6 +139,7 @@
             btnNum5.Name = "btnNum5";
             btnNum5.Size = new Size(64, 63);
             btnNum5.TabIndex = 4;
+            btnNum5.TabStop = false;
             btnNum5.Text = "5";
             btnNum5.UseVisualStyleBackColor = true;
             btnNum5.Click += btnNum5_Click;
@@ -147,6 +152,7 @@
             btnNum6.Name = "btnNum6";
             btnNum6.Size = new Size(64, 63);
             btnNum6.TabIndex = 5;
+            btnNum6.TabStop = false;
             btnNum6.Text = "6";
             btnNum6.UseVisualStyleBackColor = true;
             btnNum6.Click += btnNum6_Click;
@@ -159,6 +165,7 @@
             btnNum7.Name = "btnNum7";
             btnNum7.Size = new Size(64, 63);
             btnNum7.TabIndex = 6;
+            btnNum7.TabStop = false;
             btnNum7.Text = "7";
             btnNum7.UseVisualStyleBackColor = true;
             btnNum7.Click += btnNum7_Click;
@@ -171,21 +178,23 @@
             btnNum8.Name = "btnNum8";
             btnNum8.Size = new Size(64, 63);
             btnNum8.TabIndex = 7;
+            btnNum8.TabStop = false;
             btnNum8.Text = "8";
             btnNum8.UseVisualStyleBackColor = true;
             btnNum8.Click += btnNum8_Click;
             // 
-            // button9
+            // btnNum9
             // 
-            button9.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button9.Location = new Point(148, 141);
-            button9.Margin = new Padding(4, 3, 4, 3);
-            button9.Name = "button9";
-            button9.Size = new Size(64, 63);
-            button9.TabIndex = 8;
-            button9.Text = "9";
-            button9.UseVisualStyleBackColor = true;
-            button9.Click += button9_Click;
+            btnNum9.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNum9.Location = new Point(148, 141);
+            btnNum9.Margin = new Padding(4, 3, 4, 3);
+            btnNum9.Name = "btnNum9";
+            btnNum9.Size = new Size(64, 63);
+            btnNum9.TabIndex = 8;
+            btnNum9.TabStop = false;
+            btnNum9.Text = "9";
+            btnNum9.UseVisualStyleBackColor = true;
+            btnNum9.Click += button9_Click;
             // 
             // btnComma
             // 
@@ -195,6 +204,7 @@
             btnComma.Name = "btnComma";
             btnComma.Size = new Size(64, 63);
             btnComma.TabIndex = 9;
+            btnComma.TabStop = false;
             btnComma.Text = ",";
             btnComma.UseVisualStyleBackColor = true;
             btnComma.Click += btnComma_Click;
@@ -207,6 +217,7 @@
             btnNum0.Name = "btnNum0";
             btnNum0.Size = new Size(64, 63);
             btnNum0.TabIndex = 10;
+            btnNum0.TabStop = false;
             btnNum0.Text = "0";
             btnNum0.UseVisualStyleBackColor = true;
             btnNum0.Click += btnNum0_Click;
@@ -219,6 +230,7 @@
             btnRemoveLast.Name = "btnRemoveLast";
             btnRemoveLast.Size = new Size(64, 63);
             btnRemoveLast.TabIndex = 11;
+            btnRemoveLast.TabStop = false;
             btnRemoveLast.Text = "E";
             btnRemoveLast.UseVisualStyleBackColor = true;
             btnRemoveLast.Click += btnRemoveLast_Click;
@@ -247,6 +259,7 @@
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(79, 78);
             btnAdd.TabIndex = 0;
+            btnAdd.TabStop = false;
             btnAdd.Text = "+";
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += btnAdd_Click;
@@ -259,6 +272,7 @@
             btnMinus.Name = "btnMinus";
             btnMinus.Size = new Size(79, 78);
             btnMinus.TabIndex = 1;
+            btnMinus.TabStop = false;
             btnMinus.Text = "-";
             btnMinus.UseVisualStyleBackColor = true;
             btnMinus.Click += btnMinus_Click;
@@ -271,6 +285,7 @@
             btnMulti.Name = "btnMulti";
             btnMulti.Size = new Size(79, 78);
             btnMulti.TabIndex = 2;
+            btnMulti.TabStop = false;
             btnMulti.Text = "*";
             btnMulti.UseVisualStyleBackColor = true;
             btnMulti.Click += btnMulti_Click;
@@ -283,6 +298,7 @@
             btnDiv.Name = "btnDiv";
             btnDiv.Size = new Size(79, 78);
             btnDiv.TabIndex = 3;
+            btnDiv.TabStop = false;
             btnDiv.Text = "/";
             btnDiv.UseVisualStyleBackColor = true;
             btnDiv.Click += btnDiv_Click;
@@ -295,6 +311,7 @@
             btnEqual.Name = "btnEqual";
             btnEqual.Size = new Size(79, 78);
             btnEqual.TabIndex = 4;
+            btnEqual.TabStop = false;
             btnEqual.Text = "=";
             btnEqual.UseVisualStyleBackColor = true;
             btnEqual.Click += btnEqual_Click;
@@ -307,6 +324,7 @@
             btnReset.Name = "btnReset";
             btnReset.Size = new Size(79, 78);
             btnReset.TabIndex = 5;
+            btnReset.TabStop = false;
             btnReset.Text = "AC";
             btnReset.UseVisualStyleBackColor = true;
             btnReset.Click += btnReset_Click;
@@ -367,10 +385,12 @@
             Controls.Add(flowLayoutPanel2);
             Controls.Add(flowLayoutPanel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            KeyPreview = true;
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             Name = "Form1";
             Text = "Calculator";
+            KeyDown += Form1_KeyDown;
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel2.ResumeLayout(false);
             flowLayoutPanel2.PerformLayout();
@@ -389,7 +409,7 @@
         private System.Windows.Forms.Button btnNum6;
         private System.Windows.Forms.Button btnNum7;
         private System.Windows.Forms.Button btnNum8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnNum9;
         private System.Windows.Forms.Button btnComma;
         private System.Windows.Forms.Button btnNum0;
         private System.Windows.Forms.Button btnRemoveLast;

@@ -1,3 +1,5 @@
+using Microsoft.VisualBasic.Devices;
+
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
@@ -19,6 +21,7 @@ namespace WinFormsApp1
         private void Init()
         {
             finalResult = 0;
+
         }
         private void ResetValues()
         {
@@ -338,5 +341,81 @@ namespace WinFormsApp1
             ResetValues();
             UpdateLable();
         }
+
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.D1:
+                case Keys.NumPad1: // Handle both D1 and NumPad1
+                    btnNum1.PerformClick();
+                    break;
+                case Keys.D2:
+                case Keys.NumPad2:
+                    btnNum2.PerformClick();
+                    break;
+                case Keys.D3:
+                case Keys.NumPad3:
+                    btnNum3.PerformClick();
+                    break;
+                case Keys.D4:
+                case Keys.NumPad4:
+                    btnNum4.PerformClick();
+                    break;
+                case Keys.D5:
+                case Keys.NumPad5:
+                    btnNum5.PerformClick();
+                    break;
+                case Keys.D6:
+                case Keys.NumPad6:
+                    btnNum6.PerformClick();
+                    break;
+                case Keys.D7:
+                case Keys.NumPad7:
+                    btnNum7.PerformClick();
+                    break;
+                case Keys.D8:
+                case Keys.NumPad8:
+                    btnNum8.PerformClick();
+                    break;
+                case Keys.D9:
+                case Keys.NumPad9:
+                    btnNum9.PerformClick();
+                    break;
+                case Keys.D0:
+                case Keys.NumPad0:
+                    btnNum0.PerformClick();
+                    break;
+                case Keys.OemPeriod:
+                    btnComma.PerformClick();
+                    break;
+                case Keys.Back:
+                    btnRemoveLast.PerformClick();
+                    break;
+                case Keys.Add:
+                    btnAdd.PerformClick();
+                    break;
+                case Keys.Subtract:
+                    btnMinus.PerformClick();
+                    break;
+                case Keys.Multiply:
+                    btnMulti.PerformClick();
+                    break;
+                case Keys.Divide:
+                    btnDiv.PerformClick();
+                    break;
+                case Keys.Enter: // Handle the '=' key
+                    btnEqual.PerformClick();
+                    break;
+                case Keys.Escape:
+                    btnReset.PerformClick();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+
     }
 }
